@@ -11,13 +11,9 @@ The first seed pair with it's 1000 results will appear at the beginning of the o
 fe8ff24859844caa772f959747612cbab36fda2d9475189d6f2d5546ec2dbe93,HsWCaELP0o,1,efe7b014b1248fdec3bd8e125b1f5ced73ffa77f19494cdefde66f1628ca24e2
 
 fe8ff24859844caa772f959747612cbab36fda2d9475189d6f2d5546ec2dbe93 - the server seed
-
-                                                                 HsWCaELP0o - the client seed
-
-                                                                            1 - the nonce
-                                                                            
-                                                                              efe7b014b1248fdec3bd8e125b1f5ced73ffa77f19494cdefde66f1628ca24e2 - The
-                                                                                                                                         Resulting Hash
+                                                      HsWCaELP0o - the client seed
+                                                               1 - the nonce
+efe7b014b1248fdec3bd8e125b1f5ced73ffa77f19494cdefde66f1628ca24e2 - The Resulting Hash
 . . .
 
 **999 lines later**
@@ -47,13 +43,15 @@ Whereas
  - "Seed to Bytes" is what you'd see on the provably fair checker at [https://stake.us/provably-fair/calculation?game=limbo](https://stake.us/provably-fair/calculation?game=limbo&c=Github) and [https://stake.com/provably-fair/calculation?game=limbo](https://stake.com/provably-fair/calculation?game=limbo&c=guestpass) as shown below.
  - "Limbo Result: 1.05" is well, the game output result.
 
+--------
+
 Example of provably fair calculation provided on [Stake.us](stake.us/?c=Github) and [Stake.com](stake.com/?c=guestpass) when using the following parameters:
  - Game: Limbo
  - Server Seed: fe8ff24859844caa772f959747612cbab36fda2d9475189d6f2d5546ec2dbe93
  - Client Seed: HsWCaELP0o
  - Nonce: 459
   
---------
+~~
 
 **Final Result**
 1675.8595338512764
