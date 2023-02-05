@@ -60,6 +60,7 @@ Example of provably fair calculation provided on [Stake.us](stake.us/?c=Github) 
  - Client Seed: `HsWCaELP0o`
  - Nonce: `459`
   
+https://stake.com/provably-fair/calculation?game=limbo&serverSeed=fe8ff24859844caa772f959747612cbab36fda2d9475189d6f2d5546ec2dbe93&clientSeed=HsWCaELP0o&nonce=459&plinkoRisk=low&plinkoRow=15&c=guestpass
 ~~
 
 **Final Result**
