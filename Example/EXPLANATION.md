@@ -8,14 +8,15 @@ When running `python ..\[1]OutputHashGenerator-1000nonce.py [0]Server-Client-See
 
 The first seed pair with it's 1000 results will appear at the beginning of the output file denoted as `[1]Example-OutputHashGen.txt`
 
-fe8ff24859844caa772f959747612cbab36fda2d9475189d6f2d5546ec2dbe93,HsWCaELP0o,1,efe7b014b1248fdec3bd8e125b1f5ced73ffa77f19494cdefde66f1628ca24e2
+`fe8ff24859844caa772f959747612cbab36fda2d9475189d6f2d5546ec2dbe93,HsWCaELP0o,1,efe7b014b1248fdec3bd8e125b1f5ced73ffa77f19494cdefde66f1628ca24e2`
 
+```
 fe8ff24859844caa772f959747612cbab36fda2d9475189d6f2d5546ec2dbe93 - the server seed<br>
                                                       HsWCaELP0o - the client seed<br>
                                                                1 - the nonce<br>
 efe7b014b1248fdec3bd8e125b1f5ced73ffa77f19494cdefde66f1628ca24e2 - The Resulting Hash<br>
-
-. . .
+```
+and...
 
 **...999 lines later**
 
@@ -25,10 +26,11 @@ fe8ff24859844caa772f959747612cbab36fda2d9475189d6f2d5546ec2dbe93,HsWCaELP0o,1000
 552ed0b7904bd0064e2ff186a6bcb4b4236f551b1f8f1d4b66724f125af7a325,aenbHxFQNg,2,7892c72d1a6042bdc0e8a485bd5ecec76d148460e9044eaf731d413faa0ccefd
 552ed0b7904bd0064e2ff186a6bcb4b4236f551b1f8f1d4b66724f125af7a325,aenbHxFQNg,3,1a4436163ff143e1fcf47324aef203f3032c01d698672eccbb62563030c0a439
 ```
-As delimited by commas: Server Seed Used, Client Seed Used, Nonce Used, Resulting Game Hash of 0 Cursor Increment
+As delimited by commas: `Server Seed` Used, `Client Seed` Used, `Nonce` Used, `Resulting Game Hash` of 0 Cursor Increment
 
 
 ## [2] The Limbo Output Generated
+
 When running `python ..\[2]OutputHashto-2-Limbo.py [1]Example-OutputHashGen.txt [2]Example-Limbo-Output.txt`
 
 The resulting file is fairly self explanatory:
@@ -42,17 +44,17 @@ e0ab0f943383c78bc02e5eab96baa756eb4077fddf3aa25c88a540cfa242a1cd,    Seed to Byt
 ```
 
 Whereas 
- - "Casino Seed" refers to the output hash generated in the previous step. <br>
- - "Seed to Bytes" is what you'd see on the provably fair checker at [https://stake.us/provably-fair/calculation?game=limbo](https://stake.us/provably-fair/calculation?game=limbo&c=Github) and [https://stake.com/provably-fair/calculation?game=limbo](https://stake.com/provably-fair/calculation?game=limbo&c=guestpass) as shown below. <br>
- - "Limbo Result: 1.05" is well, the game output result.<br>
+ - `Casino Seed` refers to the output hash generated in the previous step. <br>
+ - `Seed to Bytes` is what you'd see on the provably fair checker at [https://stake.us/provably-fair/calculation?game=limbo](https://stake.us/provably-fair/calculation?game=limbo&c=Github) and [https://stake.com/provably-fair/calculation?game=limbo](https://stake.com/provably-fair/calculation?game=limbo&c=guestpass) as shown below. <br>
+ - `Limbo Result: 1.05` is, well, the game output result.<br>
 
 --------
 
 Example of provably fair calculation provided on [Stake.us](stake.us/?c=Github) and [Stake.com](stake.com/?c=guestpass) when using the following parameters:
- - Game: Limbo
- - Server Seed: fe8ff24859844caa772f959747612cbab36fda2d9475189d6f2d5546ec2dbe93
- - Client Seed: HsWCaELP0o
- - Nonce: 459
+ - Game: `Limbo`
+ - Server Seed: `fe8ff24859844caa772f959747612cbab36fda2d9475189d6f2d5546ec2dbe93`
+ - Client Seed: `HsWCaELP0o`
+ - Nonce: `459`
   
 ~~
 
