@@ -8,14 +8,18 @@ When running `python ..\[1]OutputHashGenerator-1000nonce.py [0]Server-Client-See
 
 The first seed pair with it's 1000 results will appear at the beginning of the output file denoted as `[1]Example-OutputHashGen.txt`
 
-`fe8ff24859844caa772f959747612cbab36fda2d9475189d6f2d5546ec2dbe93,HsWCaELP0o,1,efe7b014b1248fdec3bd8e125b1f5ced73ffa77f19494cdefde66f1628ca24e2`
+```
+fe8ff24859844caa772f959747612cbab36fda2d9475189d6f2d5546ec2dbe93,HsWCaELP0o,1,efe7b014b1248fdec3bd8e125b1f5ced73ffa77f19494cdefde66f1628ca24e2
+```
+
 
 ```
-fe8ff24859844caa772f959747612cbab36fda2d9475189d6f2d5546ec2dbe93 - the server seed<br>
-                                                      HsWCaELP0o - the client seed<br>
-                                                               1 - the nonce<br>
-efe7b014b1248fdec3bd8e125b1f5ced73ffa77f19494cdefde66f1628ca24e2 - The Resulting Hash<br>
+fe8ff24859844caa772f959747612cbab36fda2d9475189d6f2d5546ec2dbe93 - the server seed
+                                                      HsWCaELP0o - the client seed
+                                                               1 - the nonce
+efe7b014b1248fdec3bd8e125b1f5ced73ffa77f19494cdefde66f1628ca24e2 - The Resulting Hash
 ```
+
 and...
 
 **...999 lines later**
