@@ -25,18 +25,31 @@ Some sites use different implementations of HMAC-SHA256, but in general, functio
 
 For each verifiable bet, a client seed, a server seed, a nonce and a cursor are used as the input parameters for the random number generation function. This function utilises the cryptographic hash function HMAC_SHA256 to generate bytes which are then used as the foundation for how a site generates a provably fair random outcomes on their platform.
 
-For Example, below is the code use by [Stake.us](stake.us/?c=Github) and [Stake.com](stake.com/?c=guestpass)
+For Example, below is how you might typically see HMAC_Sha256 used:
 ```
-    // HMAC function used to output provided inputs into bytes
+    const message, nonce, path, privateKey;
+    const hashDigest = sha256(nonce + message);
+    const hmacDigest = Base64.stringify(hmacSHA256(path + hashDigest, privateKey));
+```
+or more simply...
+```
+    require(["crypto-js"], function (CryptoJS) {
+    console.log(CryptoJS.HmacSHA256("Message", "Key"));
+    });
+```
+
+While below is the code used by [Stake.us](stake.us/?c=Github) and [Stake.com](stake.com/?c=guestpass)
+```
     const hmac = createHmac('sha256', serverSeed);
     hmac.update(`${clientSeed}:${nonce}:${currentRound}`);
-    const buffer = hmac.digest();
+    const buffer = hmac.digest();       // this line was included just for context
 ```
+
 While below is the code used by [Wolf.bet](https://wolf.bet/?c=talk2them)
 ```
-  const hash = CryptoJS.HmacSHA256(server_seed,`${client_seed}_${nonce}`,).toString();
+    const hash = CryptoJS.HmacSHA256(server_seed,`${client_seed}_${nonce}`,).toString();
 ```
-Both use HMAC-SHA256 but the way in which they apply it are different, beyond just the module it relies on from JavaScript. This is why the scripts need to be made specific to certain sites at times and may not necessarily provide the same results for every online casino. It is also what proved to be challenging, for me at least, in trying to get the scripts to match whatatever hash the provably fair checker of a site would produce. This is why we start with producing the same hash first, instead of going straight for matching game results.
+Typically you find HMAC-SHA256 being used for communication, so it's already serving a different purpose in the sense of how casinos are using it and while both use HMAC-SHA256, the way in which they apply it are different, beyond just the modules it relies on from the underlying JavaScript library. This is why the scripts need to be made specific to certain sites at times and may not necessarily provide the same results for every online casino. It is also what proved to be challenging, for me at least, in trying to get the scripts to match whatatever hash the provably fair checker of a site would produce. This is why we start with producing the same hash first, instead of going straight for matching game results.
 
 
 # Variations
@@ -52,7 +65,7 @@ These hashes can be used in conjunction with a scripts for Dice, Limbo, Wheel, B
 
 ### Game Outcome Scripts
 
-*Limbo* - Uses this script on the output file from the Basic Output Hash Generator. Takes on the process of converting the first 4 byte pairs of the Hexidecimal hash and converts them to 4 Unsigned Integers and applies the Limbo game algorithm as found on [Stake.us](stake.us/?c=Github) and [Stake.com](stake.com/?c=guestpass)
+**Limbo** - Uses this script on the output file from the Basic Output Hash Generator. Takes on the process of converting the first 4 byte pairs of the Hexidecimal hash and converts them to 4 Unsigned Integers and applies the Limbo game algorithm as found on [Stake.us](stake.us/?c=Github) and [Stake.com](stake.com/?c=guestpass)
 
 **Dice** - _Pending_
 
