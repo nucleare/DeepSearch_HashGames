@@ -33,13 +33,13 @@ These hashes can be used in conjunction with a scripts for Dice, Limbo, Wheel, B
 
 *Limbo* - Uses this script on the output file from the Basic Output Hash Generator. Takes on the process of converting the first 4 byte pairs of the Hexidecimal hash and converts them to 4 Unsigned Integers and applies the Limbo game algorithm as found on [Stake.us](stake.us/?c=Github) and [Stake.com](stake.com/?c=guestpass)
 
-*Dice* - **Pending**
+**Dice** - _Pending_
 
-*Wheel* - **Pending**
+**Wheel** - _Pending_
 
-*Roulette* - **Pending**
+**Roulette** - _Pending_
 
-*Diamonds* - **Pending**
+**Diamonds** - _Pending_
 
 ## Games with more than 1 incremental number
 These games will require, most likely, their own unique script due to the game mechanics of each individual game.
@@ -52,3 +52,8 @@ These games will require, most likely, their own unique script due to the game m
  - Video Poker (7 increments to generate 52 possible cards in a full deck)
  - Diamond Poker (2 increments to cover 10 diamonds: 5 per player/dealer)
  - Slots (The incremental number is only utilised for bonus rounds)
+ 
+ 
+ ### Monetary Contributions
+ In addition to crypto address sent donations, monetary contributions using a credit card or bank card is availble through the purchase of research hours found [here](https://checkout.square.site/merchant/9EN1DRFRT1369/checkout/XYAXX4HRDPU7F4DPI4FKYJ77). To view the type of research, the progress, and to view the advantages it hopes to offer, an invite to the private repository is required to help safeguard some of the projects currently under way. Requests can be sent by submitting a an issue [here](https://github.com/nucleare/GameResultsGenerator/issues) using the title "Lacking Data" and submitting your either your preferred contact method or a message requesting the link as a temporary message until the topic is marked as hidden. The issue topic will be immediately hidden upon receipt and can be considered as under review once hidden, but note that the issue topic will remain public until viewed and/or received by the repository owner, so keep that in mind (and consider why both options have been offerred).
+ 
