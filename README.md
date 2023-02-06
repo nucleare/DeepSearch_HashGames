@@ -18,6 +18,9 @@ Or if they're in JavaScript use `npm` or `node-js`
 ```
 node {script.js}
 ```
+
+### Explained
+
 Some sites use different implementations of HMAC-SHA256, but in general, function more or less the same in using the output of their implementation to serve as the base for determine an output of a game.
 
 For each verifiable bet, a client seed, a server seed, a nonce and a cursor are used as the input parameters for the random number generation function. This function utilises the cryptographic hash function HMAC_SHA256 to generate bytes which are then used as the foundation for how a site generates a provably fair random outcomes on their platform.
@@ -33,7 +36,7 @@ While below is the code used by [Wolf.bet](https://wolf.bet/?c=talk2them)
 ```
   const hash = CryptoJS.HmacSHA256(server_seed,`${client_seed}_${nonce}`,).toString();
 ```
-Both use HMAC-SHA256 but the way in which they apply it are different, beyond just the module it relies on from JavaScript. This is why the scripts need to be made specific to certain sites at times and may not necessarily provide the same results for every online casino.
+Both use HMAC-SHA256 but the way in which they apply it are different, beyond just the module it relies on from JavaScript. This is why the scripts need to be made specific to certain sites at times and may not necessarily provide the same results for every online casino. It is also what proved to be challenging, for me at least, in trying to get the scripts to match whatatever hash the provably fair checker of a site would produce. This is why we start with producing the same hash first, instead of going straight for matching game results.
 
 
 # Variations
