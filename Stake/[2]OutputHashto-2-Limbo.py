@@ -1,3 +1,9 @@
+## This script will output the results for Limbo based on the algorithms used by Stake.com and Stake.US
+## It is intened to be used with the output file of the HashGenerator script
+## Otherwise you will need to set up an input file with 4 sets of data, delimited by comma, and have the
+## hash to base game results up on in the 4th succession, while this will perform calculation
+## for each line in that file.
+
 import hashlib
 import os
 import sys
