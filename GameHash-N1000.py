@@ -1,8 +1,25 @@
+## ---------------------------------------------------------------------------------
+## GameHash-N1000.py
+## Introducing the N1000 series GameHash generator! 
+## "Don't call it gambling, it's calculated risk taking."
+##                                               ~jacksonova
+##
+## The input file should have each line in the format of "serverSeed,clientSeed\n"
+##
+## As of February 2023, the resulting hash matches with single implementation games
+## on Stake.com and Stake.US - i.e. Dice, Limbo, Baccarat, Wheel, Roulette, & Diamonds
+##
+## Visit the wiki for more info: https://github.com/nucleare/GameResultsGenerator/wiki
+## Copyright (c) 2023 Dafordo Co. (DBA) - Join Discord @ https://discord.gg/wqZfjPUv73
+## Released under an MIT License
+## ---------------------------------------------------------------------------------
+
 import hmac
 import hashlib
 import binascii
 import sys
 
+## Using Stake's "RNG" known as the byte_generator function
 def byte_generator(serverSeed, clientSeed, nonce, cursor):
     current_round = cursor // 32
     current_round_cursor = cursor
@@ -13,12 +30,14 @@ def byte_generator(serverSeed, clientSeed, nonce, cursor):
         hmac_result.update(f"{clientSeed}:{nonce}:{current_round}".encode())
         buffer = hmac_result.digest()
 
+        ## The float caluclation below is not used for the single implementation hashes, but includes for consistency
         while current_round_cursor < 32:
             yield buffer[current_round_cursor]
             current_round_cursor += 1
         current_round_cursor = 0
         current_round += 1
 
+## Remind users that an input file and output file is needed as arguments        
 def main():
     if len(sys.argv) < 3:
         print("Please provide the input file name and output file name as command line arguments")
@@ -34,7 +53,7 @@ def main():
         for line in data:
             serverSeed, clientSeed = line.strip().split(',')
             serverSeed = serverSeed.encode()
-            for nonce in range(1, 1001):
+            for nonce in range(1, 1001):        ## Sets the total number of nonce outcomes to produce
                 cursor = 0
                 gen = byte_generator(serverSeed, clientSeed, nonce, cursor)
                 output = [next(gen) for i in range(32)]
@@ -43,16 +62,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-// To use this script, just run the following command after you've created the input file as instructed below.
-//
-//      python OutputHashGenerator-1000nonce.py InputFile.txt OutputFile.txt
-//
-//
-// The input file should have each line in the format of "serverSeed,clientSeed\n" and the output file will be in the format of "serverSeed,clientSeed,nonce,result\n"
-// This Script will produce the output hash for the first 1000 nonces, which is the outpput hash used
-// By turning the hash into bytes, then bytes to numbers
-// Which means it works for Dice, Limbo, Wheel, Baccarat, Roulette, and Diamonds on Stake.com and Stake.US
-//
-// This is a proof of concept Script, so having it produce the actual results for the games above is the next step
-// However, generating the hashes separately first were necessary for prepairing data to be used by an AI training model
