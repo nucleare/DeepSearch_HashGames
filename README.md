@@ -5,21 +5,23 @@ Bulk generation of game outcomes by supplying a list of server &amp; client seed
 This is a work in progress consisting of scripts that are made to generate the outcome of popular casino games using the provable fair system. It allows you to generate thousands of game outcomes given a server seed and client seed in .txt formaat that is can be easily imported into a .csv file. The original intention was to create easily importable data for an AI learning/prediction model and thus outputs attempt to preserve as much of the contributing data as possible (for what was perceived to be useful in using with an AI learning model. It is NOT intended to be a provably fair checker as currently finished scripts simply generate the first 1000 nonces of results and was meant for those seeking to create a consistent datasets of their game outcomes.
 
 
-
 ## To Use
 
 Simply run using Python (some libraries required, such as `crypto-js`, `crypto`, `hashlib`, and/or `os`
 
 ```
-python {script.py} {input_file.txt} {output_file.txt}
+python GameHash-N1000.py seedpair-list_file.txt output_filename.txt
 ```
 Or if they're in JavaScript use `npm` or `node-js`
 
 ```
-node {script.js}
+node GameHash.js inpute_file.txt output_file.txt
 ```
 
-### Explained
+***
+
+
+# Explained
 
 Some sites use different implementations of HMAC-SHA256, but in general, function more or less the same in using the output of their implementation to serve as the base for determine an output of a game.
 
@@ -52,6 +54,8 @@ While below is the code used by [Wolf.bet](https://wolf.bet/?c=talk2them)
 Typically you find HMAC-SHA256 being used for communication, so it's already serving a different purpose in the sense of how casinos are using it and while both use HMAC-SHA256, the way in which they apply it are different, beyond just the modules it relies on from the underlying JavaScript library. This is why the scripts need to be made specific to certain sites at times and may not necessarily provide the same results for every online casino. It is also what proved to be challenging, for me at least, in trying to get the scripts to match whatatever hash the provably fair checker of a site would produce. This is why we start with producing the same hash first, instead of going straight for matching game results.
 
 
+***
+
 # Variations
 
 ## Non-Incrementing Cursor
@@ -63,17 +67,15 @@ The cursor starts as 0 and gets increased by 1 every time the 32 bytes are retur
 
 These hashes can be used in conjunction with a scripts for Dice, Limbo, Wheel, Baccarat, Roulette, and Diamonds for [Stake.us](stake.us/?c=Github) and [Stake.com](stake.com/?c=guestpass)
 
-### Game Outcome Scripts
+## Game Outcome Scripts
 
-**Limbo** - Uses this script on the output file from the Basic Output Hash Generator. Takes on the process of converting the first 4 byte pairs of the Hexidecimal hash and converts them to 4 Unsigned Integers and applies the Limbo game algorithm as found on [Stake.us](stake.us/?c=Github) and [Stake.com](stake.com/?c=guestpass)
+### Stake
 
-**Dice** - _Pending_
-
-**Wheel** - _Pending_
-
-**Roulette** - _Pending_
-
-**Diamonds** - _Pending_
+ - **Limbo** - Uses this script on the output file from the Basic Output Hash Generator. Takes on the process of converting the first 4 byte pairs of the Hexidecimal hash and converts them to 4 Unsigned Integers and applies the Limbo game algorithm as found on [Stake.us](stake.us/?c=Github) and [Stake.com](stake.com/?c=guestpass)
+ - **Dice** - _Pending_
+ - **Wheel** - _No immediate plans for production._
+ - **Roulette** - _No immediate plans for production._
+ - **Diamonds** - _No immediate plans for production._
 
 ## Games with more than 1 incremental number
 These games will require, most likely, their own unique script due to the game mechanics of each individual game.
@@ -87,7 +89,14 @@ These games will require, most likely, their own unique script due to the game m
  - Diamond Poker (2 increments to cover 10 diamonds: 5 per player/dealer)
  - Slots (The incremental number is only utilised for bonus rounds)
  
-
+ ### BC.Game
+ 
+ 
+ ### Wolf.bet
+ - **Dice** - _Pending_
+ - **Limbo** - _Pending_
+ - **Hilo** - _Pending_
+ 
  
  ***
  
