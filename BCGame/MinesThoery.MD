@@ -134,6 +134,8 @@ Note that the correlation may refer to may mean any number of things such as, fo
  - every 500 nonces always has 3 instances of 12M games; or 
  - every hashed server seed that starts with "aa1" has an M12 game somewhere between nonce 30 and 39; or 
  - every so often an M12 game is proceeded by a game that has a mine on location 13 ("M13"); or 
+ - every game set has one instance that 2 consecutive nonces will result in only 2 numbers of the array being re-arranged (a nearly identical game being repeated except for one mine being placed somewhere else; or
+ - whenever an array containing e, f, g, h, i occurs, an array with e, f, g, h, i will occur again within 1-25 nonces (letters are used to represent any possible number so as to point out, in this example, that if a particular order of an array segment occurs, it is likely to occur again whereas the variable try to specify that it has to be that particular set of numbers and not necessarily just the order of the array); or
  - etc.
 
 Which would then mean that if we took, for example, the last correlation example in the list above, and made a guess that after an M13 game we would have an M12 game, (and although normally we would probably be wrong most of the times if using that rule alone, but) if at least one time we were right and we were able to predict when we were right, then that would mean not only that we had won, but that we were able to minimize the number of times we were wrong before getting it right and successfully proved our theory or proved our dataset could help predict that win.
