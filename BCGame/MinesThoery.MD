@@ -94,40 +94,40 @@ Mines - 10
 
 The resulting array would be - 12, 13, 14, 16, 17, 19, 22, 23, 24, 25
 
-### Theory 1 
+## Theory 1 
 
-Whereas the starting point of the mine array is `[7, 2, 19, 25, 1, 13, 5, 24, 14, 6, 15, 9, 22, 16, 3, 17, 18, 20, 8, 21, 4, 12, 10, 23, 11,]`; and
+ - Whereas the starting point of the mine array is `[7, 2, 19, 25, 1, 13, 5, 24, 14, 6, 15, 9, 22, 16, 3, 17, 18, 20, 8, 21, 4, 12, 10, 23, 11,]`; and
+- Whereas it is considered infeasible to predict the resulting hash of an unknown server seed being combined with a known client seed and nonce; and
+- Whereas if you chose to use the same client seed repeatedly, the only variable in determining the resulting hash is the unknown server seed; and
+- Whereas using any preferred coding environment, one could re-arrange an array based on an index; and
+- Whereas it is concievable that the resulting hash is, in some form, an index for the re-arrangement of the initial array; and
+- Whereas it is noted that upon determining that index, it is more than likely unique to that particular hash and since the hash changes with every nonce, we would not be able to apply that index for sorting the array if given the same client seed and nonce; and
+- Whereas the number of mines being set limits the possible combinations of outcomes of any given seed combination and nonce; and
+- Whereas by confining the number of possible outcomes to exist in any given set of seed combinations no matter how infeasible the number of possible hashes may exist, it will result in more repeated game outcomes to occur; and
+- Whereas it is believed that some notable pattern of reoccurance of an index can be attributed to any given set of seed combinations will appear intermittently; now, therefore, be it
+- Theorized that a correlations between the frequency of those intermittent reoccurances appearing in one given set of a seed combination can be found in the frequency of intermittent reoccurances that appear in another set of a seed combination; and, be it
+- Further theorized a library of datasets consisting of those correlations may assist in projecting the future reoccurance of an outcome based on the recorded reoccurances found within a currently used set of a seed combination where the server seed and resulting hash are unknown.
 
-Whereas it is considered infeasible to predict the resulting hash of an unknown server seed being combined with a known client seed and nonce; and
+### Theory 1 Explained
 
-Whereas if you chose to use the same client seed repeatedly, the only variable in determining the resulting hash is the unknown server seed; and
-
-Whereas using any preferred coding environment, one could re-arrange an array based on an index; and
-
-Whereas it is concievable that the resulting hash is, in some form, an index for the re-arrangement of the initial array; and
-
-Whereas it is noted that upon determining that index, it is more than likely unique to that particular hash and since the hash changes with every nonce, we would not be able to apply that index for sorting the array if given the same client seed and nonce; and
-
-Whereas the number of mines being set limits the possible combinations of outcomes of any given seed combination and nonce; and
-
-Whereas by confining the number of possible outcomes to exist in any given set of seed combinations no matter how infeasible the number of possible hashes may exist, it will result in more repeated game outcomes to occur; and
-
-Whereas it is believed that some notable pattern of reoccurance of an index can be attributed to any given set of seed combinations will appear intermittently; now, therefore, be it
-
-Theorized that a correlations between the frequency of those intermittent reoccurances appearing in one given set of a seed combination can be found in the frequency of intermittent reoccurances that appear in another set of a seed combination; and, be it
-
-Further theorized a library of datasets consisting of those correlations may assist in projecting the future reoccurance of an outcome based on the recorded reoccurances found within a currently used set of a seed combination where the server seed and resulting hash are unknown.
-
-**Theory 1 Explained**
-
-Let's say we limit the earlier provided example to a game being set to just 1 mine instead of 10. The mine to be placed would be at location 12 because it's the first number of the re-arranged array. If we generate all the outcomes for 10,000 nonces, it's very probably that we would have more than 1 game where the single mine is placed at 12 again because there are only 25 possible locations that 1 mines can be placed and we have 10,000 games being played.
+Let's say we take the earlier provided example and change the game settings to set the number of mines to be 1 mine instead of 10. The mine to be placed would be at location 12 because it's the first number of the re-arranged array. If we generate all the outcomes for 10,000 nonces, it's very probable that we would have more than 1 game where the single mine is placed at location 12 again because there are only 25 possible locations that 1 mine could be placed and we have 10,000 games being played.
 
 Statistically speaking, if there's a chance that 1 in 25 games would result in the mine being placed on location 12 then it can be said that 4% of our 10,000 games will consist of a game result with the single mine being placed at location 12.
 
-Now if we record which nonce results in a mine being placed at location 12 (let's call those nonces as having an "M12" result) and we plot when they occurred for any given seed combination (let's call each seed combination a "game set") then it's first theorized that, because we know that occassionally we will see an M12 game appearing on some form of consistent basis (for example if an M12 game was spaced 10 nonces apart then it's likely we will see some number of nonces later that it will happen again that they are 10 nonces apart) and because we know or admit that when those instances occur, the instance of them being 10 nonces apart, will be intermittent, but albeit thaat fact, perhaps we can find some correlation with how often or when those instance occurs in one game set and find some correlation to similar instances or the smae instance occuring in a different game set.
+Now if we record which nonce results in a mine being placed at location 12 _(let's call those nonces as having an "M12" result)_ and we were to plot when they occurred for any given seed combination _(let's call each seed combination a "game set")_ then it's first theorized that: 
 
-If that's possible or true, then if we made a library or dataset of those correlations and we were playing a game set where we dont know the server seed but up until whatever nonce we may be on, we have identified enough instances of, again for example, M12 games being also 10 nonces apart, then it's further theorized that we would be able to compare it to our dataset where we might be able to find a match in either the frequency of those appearances or in the correlation of comparable game sets that we can then use what we know to either predict when that instance will occur again in our current game set or be able to recognize that the instance was occurring.
+Since we assume that occassionally we will see an M12 game appearing on some form of consistent basis _(for example if an M12 game was spaced 10 nonces apart then it's likely we will see some number of nonces later that it will happen again that they are 10 nonces apart)_ and because we know or admit that when those instances occur, (the instance of them being 10 nonces apart) will be intermittent or in otherwords inconsistent, but albeit thaat fact, it's theorized that if we can find some correlation with how often or when those instance occurs in one game set then we can find some correlation to either similar instances or the same instance occuring themselves in another game set or perhaps find a correlation between the correlations of similar instances found in another game set.
 
-Note that the correlation may refer to any number of things such as: every 500 nonces always has 3 instances of 12M games; or every hashed server seed that starts with "aa1" has an M12 game somewhere between nonce 30 and 39; or every so often an M12 game is proceeded by a game that has a mine on location 13 ("M13"); or etc. - which would then mean that if we tried, for example, a guess that after an M13 game we would have an M12 game and although we may be wrong most of the time, if at least one time we were right, that would mean not only we would win, but that the win was a result of what we had further theorized.
+If that's possible or true, then if we made a library or dataset of those correlations and we were playing a game set where we dont know the server seed but up until whatever nonce we may be on, we have identified enough instances of, again for example, M12 games being also 10 nonces apart, then it's further theorized that:
+
+We would be able to compare it to our dataset where we might be able to find a match in either the frequency of those appearances or in the correlation of comparable game sets such that we can then use what we know to either predict when that instance will occur again in our current game set or be able to recognize that the instance was occurring.
+
+Note that the correlation may refer to may mean any number of things such as, for example: 
+ - every 500 nonces always has 3 instances of 12M games; or 
+ - every hashed server seed that starts with "aa1" has an M12 game somewhere between nonce 30 and 39; or 
+ - every so often an M12 game is proceeded by a game that has a mine on location 13 ("M13"); or 
+ - etc.
+
+Which would then mean that if we tried, for example taking the last correlation example in the list above, a guess that after an M13 game we would have an M12 game and although we may be wrong some mnumber of the times, if at least one time we were right, that would mean not only we would win, but if we were able to minimize the number of times we were wrong before getting it right, then that win was a result of what we had further theorized.
 
 In laymen's terms, or as TLDR, if it's all just a coincidence then maybe we can predict when that coincidence might occur again to our benefit.
