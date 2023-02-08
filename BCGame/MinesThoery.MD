@@ -86,13 +86,21 @@ It is my understanding (as a non-programmer) that the algorithmic function used 
 For preliminary studies, we will be using [this](https://bcverify.gdoc.win/) provably fair checker.
 
 **Example**
+
 Given the following:
+
 Server seed - 40beefabc30dfdfb54aa239479dcd5a469e5f9f1879c622063e3704194c31664
+
 Client seed - 00ff0000ff000000ff
+
 Nonce - 176
+
 Mines - 10
 
-The resulting array would be - 12, 13, 14, 16, 17, 19, 22, 23, 24, 25
+
+The resulting array would be - 12, 13, 14, 16, 17, 19, 22, 23, 24, 25 and the resulting gems are located on 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 15, 18, 20, 21
+
+Whereas the full array is - 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 and the single gem on the board is at location 10
 
 ## Theory 1 
 
@@ -128,6 +136,6 @@ Note that the correlation may refer to may mean any number of things such as, fo
  - every so often an M12 game is proceeded by a game that has a mine on location 13 ("M13"); or 
  - etc.
 
-Which would then mean that if we tried, for example taking the last correlation example in the list above, a guess that after an M13 game we would have an M12 game and although we may be wrong some mnumber of the times, if at least one time we were right, that would mean not only we would win, but if we were able to minimize the number of times we were wrong before getting it right, then that win was a result of what we had further theorized.
+Which would then mean that if we took, for example, the last correlation example in the list above, and made a guess that after an M13 game we would have an M12 game, (and although normally we would probably be wrong most of the times if using that rule alone, but) if at least one time we were right and we were able to predict when we were right, then that would mean not only that we had won, but that we were able to minimize the number of times we were wrong before getting it right and successfully proved our theory or proved our dataset could help predict that win.
 
-In laymen's terms, or as TLDR, if it's all just a coincidence then maybe we can predict when that coincidence might occur again to our benefit.
+In laymen's terms, or as **TLDR**, if it's all just a coincidence then maybe we can predict when that coincidence might occur again to our benefit by drawing conlcusions about how or when those coincidences occur.
