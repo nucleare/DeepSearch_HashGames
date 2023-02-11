@@ -68,11 +68,48 @@ https://arxiv.org/abs/2002.09239
 
 Pseudorandom bit generators (PRBG) can be designed to take the advantage of some hard number theoretic problems such as the discrete logarithm problem (DLP). Such type of generators will have good randomness and unpredictability properties as it is so difficult to find an easy solution to the regarding mathematical dilemma. Hash functions in turn play a remarkable role in many cryptographic tasks to achieve various security strengths. In this paper, a pseudorandom bit generator mechanism that is based mainly on the elliptic curve discrete logarithm problem (ECDLP) and hash derivation function is proposed. The cryptographic hash functions are used in consuming applications that require various security strengths. In a good hash function, finding whatever the input that can be mapped to any pre-specified output is considered computationally infeasible. The obtained pseudorandom bits are tested with NIST statistical tests and it also could fulfill the up-to-date standards. Moreover, a 256×256 grayscale images are encrypted with the obtained pseudorandom bits following by necessary analysis of the cipher images for security prove.
 
+***
+
+# Perhaps Far-fetched
+We might be reaching with these topics though... we added their respective categories for reference.
+
+### Time-Space Tradeoffs for Element Distinctness and Set Intersection via Pseudorandomness
+Computer Science > Data Structures and Algorithms
+https://arxiv.org/abs/2210.07534
+
+In the Element Distinctness problem, one is given an array a1,…,an of integers from [poly(n)] and is tasked to decide if {ai} are mutually distinct. Beame, Clifford and Machmouchi (FOCS 2013) gave a low-space algorithm for this problem running in space S(n) and time T(n) where T(n)≤O˜(n3/2/S(n)1/2), assuming a random oracle (i.e., random access to polynomially many random bits). A recent breakthrough by Chen, Jin, Williams and Wu (SODA 2022) showed how to remove the random oracle assumption in the regime S(n)=polylog(n) and T(n)=O˜(n3/2). They designed the first truly polylog(n)-space, O˜(n3/2)-time algorithm by constructing a small family of hash functions H⊆{h|h:[poly(n)]→[n]} with a certain pseudorandom property.
+In this paper, we give a significantly simplified analysis of the pseudorandom hash family by Chen et al. Our analysis clearly identifies the key pseudorandom property required to fool the BCM algorithm, allowing us to explore the full potential of this construction. As our main result, we show a time-space tradeoff for Element Distinctness without random oracle. Namely, for every S(n),T(n) such that T≈O˜(n3/2/S(n)1/2), our algorithm can solve the problem in space S(n) and time T(n). Our algorithm also works for a related problem Set Intersection, for which this tradeoff is tight due to a matching lower bound by Dinur (Eurocrypt 2020). As two additional contributions, we show a more general pseudorandom property of the hash family, and slightly improve the seed length to sample the pseudorandom hash function.
 
 
+### Provable Fairness for Neural Network Models using Formal Verification
+Computer Science > Machine Learning
+https://arxiv.org/abs/2212.08578
+
+Machine learning models are increasingly deployed for critical decision-making tasks, making it important to verify that they do not contain gender or racial biases picked up from training data. Typical approaches to achieve fairness revolve around efforts to clean or curate training data, with post-hoc statistical evaluation of the fairness of the model on evaluation data. In contrast, we propose techniques to \emph{prove} fairness using recently developed formal methods that verify properties of neural network models.Beyond the strength of guarantee implied by a formal proof, our methods have the advantage that we do not need explicit training or evaluation data (which is often proprietary) in order to analyze a given trained model. In experiments on two familiar datasets in the fairness literature (COMPAS and ADULTS), we show that through proper training, we can reduce unfairness by an average of 65.4\% at a cost of less than 1\% in AUC score.
 
 
+### Maximum likelihood estimator for skew Brownian motion: the convergence rate
+Mathematics > Statistics Theory
+https://arxiv.org/abs/2302.02954
+
+We give a thorough description of the asymptotic property of the maximum likelihood estimator (MLE) of the skewness parameter of a Skew Brownian Motion (SBM). Thanks to recent results on the Central Limit Theorem of the rate of convergence of estimators for the SBM, we prove a conjecture left open that the MLE has asymptotically a mixed normal distribution involving the local time with a rate of convergence of order 1/4. We also give a series expansion of the MLE and study the asymptotic behavior of the score and its derivatives, as well as their variation with the skewness parameter. In particular, we exhibit a specific behavior when the SBM is actually a Brownian motion, and quantify the explosion of the coefficients of the expansion when the skewness parameter is close to −1 or 1.
 
 
+### A data variation robust learning model based on importance sampling
+Statistics > Machine Learning
+https://arxiv.org/abs/2302.04438
+
+A crucial assumption underlying the most current theory of machine learning is that the training distribution is identical to the testing distribution. However, this assumption may not hold in some real-world applications. In this paper, we propose an importance sampling based data variation robust loss (ISloss) for learning problems which minimizes the worst case of loss under the constraint of distribution deviation. The distribution deviation constraint can be converted to the constraint over a set of weight distributions centered on the uniform distribution derived from the importance sampling method. Furthermore, we reveal that there is a relationship between ISloss under the logarithmic transformation (LogISloss) and the p-norm loss. We apply the proposed LogISloss to the face verification problem on Racial Faces in the Wild dataset and show that the proposed method is robust under large distribution deviations.
+
+
+https://arxiv.org/
+
+# Applicable Subjects
+
+### Hex to Decimal
+https://byjus.com/maths/hex-to-decimal/
+
+### Decimal to Hex
+https://byjus.com/maths/decimal-to-hex-conversion/
 
 
