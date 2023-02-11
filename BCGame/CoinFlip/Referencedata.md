@@ -1,5 +1,5 @@
 # Coin Flip Reference Data
-Since there doesn't seem to be a provably fair verifier page on [BC.Games](https://bc.game/i-5r54hpin-n/) I wanted to try and save some reference data as there is a ]provably fair checker from github](https://bcgame-project.github.io/verify/coinflip.html) but no explanation given on the site.
+Since there doesn't seem to be a provably fair verifier page on [BC.Games](https://bc.game/i-5r54hpin-n/) I wanted to try and save some reference data as there is a [provably fair checker from github](https://bcgame-project.github.io/verify/coinflip.html) but no explanation given on the site.
 
 So the following is from the in-game "Verify Results" modal popup for [this](https://bc.game/#/sd/1139Q7RF8FQCR7) game:
 
@@ -18,10 +18,12 @@ Round
 Final Result
 Note that for 
 
-"1 -> coin" Is Tails 
+"1 -> coin" Is Tails
+
 ![Tails](https://bc.game/assets/tail.6faa0ccf.png) 
 
 and "0 -> coin" is heads
+
 ![Heads](https://bc.game/assets/head.a1e82bad.png)
 
 
