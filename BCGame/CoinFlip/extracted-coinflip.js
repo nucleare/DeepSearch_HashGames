@@ -1,4 +1,4 @@
-// impor 
+// work in progress
 
 import hmacSHA256 from 'https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/hmac-sha256.js';
 
@@ -41,20 +41,17 @@ import hmacSHA256 from 'https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/h
         nonce: parseInt(qs.n)||'',
         round: parseInt(qs.r)||10
       });
-      return (
-        {...bind('serverSeed')}
-        {...bind('clientSeed')}
-        {...bind('nonce')}
-        {...bind('round')}
-            {
-              Array(state.round).fill(1).map((item, index) => {
-                const hmacSha256Result = getHashString(state.serverSeed, state.clientSeed, state.nonce, index+1);
-                const resultList = getHashResultNumber(hmacSha256Result);
-                const finalResult = getResult(resultList.hex);
-                return (
-                  {index + 1}
-              })
-            }
-      );
-    }
-    
+        return (
+        const hmacSha256Result = getHashString(state.serverSeed, state.clientSeed, state.nonce, index+1);
+        const resultList = getHashResultNumber(hmacSha256Result);
+        const finalResult = getResult(resultList.hex);
+        return finalResult
+        )
+    };
+
+
+                        
+                            
+
+                        
+                                                         
