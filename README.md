@@ -82,13 +82,14 @@ These hashes can be used in conjunction with a scripts for Dice, Limbo, Wheel, B
 
 ### Stake
 
- - **Limbo** - Uses this script on the output file from the Basic Output Hash Generator. Takes on the process of converting the first 4 byte pairs of the Hexidecimal hash and converts them to 4 Unsigned Integers and applies the Limbo game algorithm as found on [Stake.us](stake.us/?c=Github) and [Stake.com](stake.com/?c=guestpass)
+ - **[Limbo](https://github.com/nucleare/GameResultsGenerator/tree/main/Stake)** - Uses [this script](https://github.com/nucleare/GameResultsGenerator/blob/main/GameHash-N1000.py) on the output file from the Basic Output Hash Generator. Takes on the process of converting the first 4 byte pairs of the Hexidecimal hash and converts them to 4 Unsigned Integers and applies the Limbo game algorithm as found on [Stake.us](stake.us/?c=Github) and [Stake.com](stake.com/?c=guestpass)
  - **Dice** - _Pending_
  - **Wheel** - _No immediate plans for production._
  - **Roulette** - _No immediate plans for production._
  - **Diamonds** - _No immediate plans for production._
 
 ## Games with more than 1 incremental number
+
 These games will require, most likely, their own unique script due to the game mechanics of each individual game.
 
  - Hilo (Unlimited to cover required amount of cards)
@@ -102,8 +103,15 @@ These games will require, most likely, their own unique script due to the game m
  
  ### BC.Game
  
+ Src: https://github.com/bcgame-project/verify
+ - [Coin Flip](https://github.com/nucleare/GameResultsGenerator/tree/main/BCGame/CoinFlip)
+ - [Hilo](https://github.com/nucleare/GameResultsGenerator/tree/main/BCGame/Hilo) - Discovery 02/11/2023 - Shares same output hash generation for the underlying game mechanics but when using those figures to represent a card in a deck of cards, vastly ndifferent. Read a tad more on that [here](https://github.com/nucleare/GameResultsGenerator/blob/main/BCGame/Hilo/Observation.md) 
+ - [Mines](https://github.com/nucleare/GameResultsGenerator/tree/main/BCGame/Mines)
+ 
+ -Source 
  
  ### Wolf.bet
+ 
  - **Dice** - _Pending_
  - **Limbo** - _Pending_
  - **Hilo** - _Pending_
@@ -112,9 +120,11 @@ These games will require, most likely, their own unique script due to the game m
  ***
  
  ### Monetary Contributions
- In addition to crypto address sent donations, monetary contributions using a credit card or bank card is availble through the purchase of research hours found [here](https://checkout.square.site/merchant/9EN1DRFRT1369/checkout/XYAXX4HRDPU7F4DPI4FKYJ77). To view the type of research, the progress, and to view the advantages it hopes to offer, an invite to the private repository is required to help safeguard some of the projects currently under way. Requests can be sent by submitting a an issue [here](https://github.com/nucleare/GameResultsGenerator/issues) using the title "Lacking Data" and submitting your either your preferred contact method or a message requesting the link as a temporary message until the topic is marked as hidden. The issue topic will be immediately hidden upon receipt and can be considered as under review once hidden, but note that the issue topic will remain public until viewed and/or received by the repository owner, so keep that in mind (and consider why both options have been offerred).
+ 
+ In addition to crypto address sent donations, monetary contributions using a credit card or bank card is availble through the [purchase of research hours found here](https://checkout.square.site/merchant/9EN1DRFRT1369/checkout/XYAXX4HRDPU7F4DPI4FKYJ77). To view the type of research, the progress, and to view the advantages it hopes to offer, an invite to the private repository is required to help safeguard some of the projects currently under way. Requests can be sent by [submitting a an issue here](https://github.com/nucleare/GameResultsGenerator/issues) using the title "Lacking Data" and submitting your either your preferred contact method or a message requesting the link as a temporary message until the topic is marked as hidden. The issue topic will be immediately hidden upon receipt and can be considered as under review once hidden, but note that the issue topic will remain public until viewed and/or received by the repository owner, so keep that in mind (and consider why both options have been offerred).
 
 Or 
 
 BTC [bc1qr2ymf0n0hn8m4ymewk8mccf7j43srhxycvwsjh](bitcoin:BC1QR2YMF0N0HN8M4YMEWK8MCCF7J43SRHXYCVWSJH?label=GitHub%20DOnations)
+
 ETH - 0xeA9Ea1678e94c53F25E49D6eC6b175A86796dCA3
