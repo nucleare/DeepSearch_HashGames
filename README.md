@@ -1,8 +1,19 @@
 # GameResultsGenerator
 Bulk generation of game outcomes by supplying a list of server &amp; client seed combinations.
 
-## Overview
-This is a work in progress consisting of scripts that are made to generate the outcome of popular casino games using the provable fair system. It allows you to generate thousands of game outcomes given a server seed and client seed in .txt formaat that is can be easily imported into a .csv file. The original intention was to create easily importable data for an AI learning/prediction model and thus outputs attempt to preserve as much of the contributing data as possible (for what was perceived to be useful in using with an AI learning model. It is NOT intended to be a provably fair checker as currently finished scripts simply generate the first 1000 nonces of results and was meant for those seeking to create a consistent datasets of their game outcomes.
+## Overview - A Work in Progress
+This is a work in progress consisting of scripts that are made to generate the outcome of popular casino games using the provable fair system. It allows you to generate thousands of game outcomes given a server seed and client seed in .txt formaat that is can be easily imported into a .csv file. The original intention was to create easily importable data for an AI learning/prediction model and thus outputs attempt to preserve as much of the contributing data as possible (for what was perceived to be useful in using with an AI learning model.) To that end, it is NOT intended to be a provably fair checker, though it is in essence producing the game results based on a given set of server and client seed, but as they function, it merely generates, in bulk, the game results of a given seed pair for the purpose of creating complete, full sets of game data which can be used to:
+ - Create a full game history of outcomes in case you change games and wanted to know what would've happened if you stayed at another game
+ - Use the data to create projection models, chart game outcome  trends, and otherwise identify and create one's own world of theorhetical science and math as it applies to playing games of chance, risk, and opportunistic fortune
+ - Create a more manageable copy of the game result data for training an AI model
+ - Simulate hosting your own at-home casino game where you can pre-determine all the results, and provide yourself with an excescise that will prove to be convincing evidence that the casino is in fact NOT changing the placement of the mines when you click on them.
+ - And so much more...!
+ 
+ **As of 02/11/23 - Working files include**
+ 
+  - `GameHash-N1000.py` for providing the output hash of a server seed, client seed pair, automatically attributing each iteration with an apporpriate nonce count and outputting the results in a list in another file. which can be used with...
+  - `\Stake\Hash2Limbo-Stake.py` takes the output file from GameHash-N1000.py and returns the results for each game (seed pair and nonce) of Limbo as found on Stake.com or Stake.US and; this output will let you review your revealed server seeds and see how many multipleiers in the hundreds you may have or could have come across. (That sound smore useful doesn't it? lol)
+
 
 
 ## To Use
