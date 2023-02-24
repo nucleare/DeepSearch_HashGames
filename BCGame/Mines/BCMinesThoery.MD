@@ -101,6 +101,7 @@ Mines - 10
 The resulting array would be - 12, 13, 14, 16, 17, 19, 22, 23, 24, 25 and the resulting gems are located on 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 15, 18, 20, 21
 
 Whereas the full array is - 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 and the single gem on the board is at location 10
+**IT should be noted that it was later discovered because we used the provably fair checker from gdoc, it automatically sorted the numbers used to determine the mines instead of showing them in their original array order.**
 
 ## Theory 1 
 
