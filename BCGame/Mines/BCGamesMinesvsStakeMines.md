@@ -1,5 +1,5 @@
 # The Differences in Calculating Game Results (and what's more commonly used?)
-While I've always felt BC.Games Mines played differently from Stake.com/Stake.us, any attempted to describe how the games are different is very difficult to put into words since I would technically be trying to describe how two games, both based on "randomly" generated results, could possibly produce a discernable trend in their game outputs?
+While I've always felt BC.Games Mines played differently from Stake.com/Stake.us, any attempt to describe how the games are different is very difficult to put into words since I would technically be trying to describe how two games, both based on "randomly" generated results, could possibly produce a discernable trend in their game outputs?
 
 Part of me would try to say or explain that it's just the way the placement of the mines take place. There are patterns I can expect to see in Stake games that I would never or rarely ever try to guess compared to a BC.Game version of mines. I've also noticed my plays style and gem selection _feels_ like it's different, though I haven't reflected on it to be sure, because it's quite possible that it might actually be the same and it's just my human pyschology which makes me think I'm playing differently simply because of the difference in graphics.
 
