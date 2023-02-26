@@ -271,8 +271,7 @@ Regardless of how obvious it may be, we'll include inclue everything we see.
 
 ###  Simplicity vs. Complicated
 
-BC.Game uses the hashed server/client/nonce to determine and re-arrange a pre-determined array 
-Stake.com uses their "cursor" implementation which esssentially acts like a subnonce to then produce 3 different hashes from the same nonce/server/client seed and use the resulting hashes as part of a bytes to number routine that is then supposed to be netered into one final algorithm which supposedly determines the coordinates of each mine.
+BC.Game uses the hashed server/client/nonce to determine and re-arrange a pre-determined array while on the other hand, Stake.com uses their "cursor" implementation which esssentially acts like adding a subnonce to their main hash and then producing 3 different hashes from the same nonce/server/client but with an incremental subnonce to produce those 3 hashes which are then used to create a value entry into a coordinate formulate and determines the placement of each mine. 
 
 Since Stake's process is more extensive, and we want to make sense of it, we will get the results for setting the game settings to give us the coorinates for all 24 mines and because we know going high or lower in the number of mines doesn't change their positions, I shouldn't need the data for other lower level settings. We are 
  - Getting more examples of the coorinate example calculations
