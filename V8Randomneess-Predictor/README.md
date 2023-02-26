@@ -1,5 +1,6 @@
 # v8-randomness-predictor
-## As provided by PwnFunction and the [v8-randomness-predictor](https://github.com/PwnFunction/v8-randomness-predictor)
+
+## As provided by [@PwnFunction](https://github.com/PwnFunction) and the [v8-randomness-predictor](https://github.com/PwnFunction/v8-randomness-predictor)
 
 Using [z3](https://github.com/Z3Prover/z3) to predict `Math.random` in [v8](https://v8.dev)
 
