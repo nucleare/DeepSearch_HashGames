@@ -59,7 +59,7 @@ Additional Response to the same post:
 
 > Incidentally, SHA256(data||key), while not vulnerable to length extension, is vulnerable to collisions in SHA256, which can also produce collisions in the proposed MAC, due to the same iterated construction. HMAC's nesting prevents these and various other attacks. With non-Merkle-Damgård hashes, you don't necessarily need the HMAC construction, though.
 
-
+******
 
 ### Logic
 If given a series of hashes and told they were part of a sequence in some shape or form, it would be nearly impossible to determine what sort of sequence rules determine the order of the hashes let alone would you be able to predict the next hash in the sequence without being told the rules of the sequence, especially since they're made up of numbers and letters and the relationship they have to one another could be based on either it's digest or the cipher text. 
@@ -70,4 +70,55 @@ But, even knowing the sequence, it would still be impossible to predict the next
 # Random Data Collection
 The following list is merely to comprise data for reference.
 
-Input (Plaintext)                     Output Hash (ciphertext)
+Input (Plaintext) - Output Hash (ciphertext)
+1 - 6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b
+2 - d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35
+3 - 4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce
+4 - 4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a
+5 - ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d
+6 - e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683
+7 - 7902699be42c8a8e46fbbb4501726517e86b22c56a189f7625a6da49081b2451
+8 - 2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3
+9 - 19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7
+0 - 5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9
+
+a - ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb
+A - 559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd
+10 - 4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5
+
+b - 3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d
+B - df7e70e5021544f4834bbee64a9e3789febc4be81470df629cad6ddb03320a5c
+11 - 4fc82b26aecb47d2868c4efbe3581732a3e7cbcc6c2efb32062c08170a05eeb8
+
+c - 2e7d2c03a9507ae265ecf5b5356885a53393a2029d241394997265a1a25aefc6
+C - 6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d
+12 - 6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918
+
+d - 18ac3e7343f016890c510e93f935261169d9e3f565436429830faf0934f4f8e4
+D - 3f39d5c348e5b79d06e842c114e6cc571583bbf44e4b0ebfda1a01ec05745d43
+13 - 3fdba35f04dc8c462986c992bcf875546257113072a909c162f7e470e581e278
+
+e - 3f79bb7b435b05321651daefd374cdc681dc06faa65e374e38337b88ca046dea
+E - a9f51566bd6705f7ea6ad54bb9deb449f795582d6529a0e22207b8981233ec58
+14 - 8527a891e224136950ff32ca212b45bc93f69fbb801c3b1ebedac52775f99e61
+
+f - 252f10c83610ebca1a059c0bae8255eba2f95be4d1d7bcfa89d7248a82d9f111
+F - f67ab10ad4e4c53121b6a5fe4da9c10ddee905b978d3788d2723d7bfacbe28a9
+15 - e629fa6598d732768f7c726b4b621285f9c3b85303900aa912017db7617d8bdb
+
+
+- Abandoned for now - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
