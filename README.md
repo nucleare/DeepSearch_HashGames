@@ -119,7 +119,27 @@ These games will require, most likely, their own unique script due to the game m
  
  ***
  
- ### Monetary Contributions
+ ## Contributing
+ 
+ ### Research
+ Join my research collect channel on [Telegram](https://t.me/+8stIgx7cCCk1ODBh) and submit your server/client seed & nonce combinations for your more interesting game outcomes for tracking and notation. More details below.
+ 
+ Accepting:
+ 
+ - Screenshots of detailed game result - showing all or part of hashed server seed, client seed, and nonce (nd the unhashed seed when applicable)
+ - Game results are for provably fair games only that utilize the server seed, client seed, and nonce (and sub-nonce if applicable) to generate the game result. 
+_These are typically found as house games or originals_
+ - For the first nonce or game outcome of a used seed combination, please post the copy & pasted seed information with the screenshot or as a reply to the screenshot, Subsequent games using the same server seed and client seed do not need to include the pasted seeds. Only when changes to server seed or client seed occur, then please paste the information for ease of reference
+ - Does NOT need to be a win. We're not looking for glory and glamour, just data for determining correlations. So if you lose the game but it was still something that would've resulted in a high multi, please submit it. _(Ex. Dice hitting 0.00x or 100.00x; HiLo coming out with 3 Ace cards or 3 King cards in a row where you could've bet higher or missed the correct call and lose or won only a small multiplier; Slide hits over 1000x, Crash hits over 1000x, Mines gem formation resembles a simple or easy to guess outcome such as 3 full rows for 15 gems on 10 mines, Towers is a straight shot up one of the higher settings, etc.)_ The outcome itseslf when considered a rare occassion, submissino of the data would help
+ 
+ 
+ It can be for any casino site that incorporates a provably fair system and allows you to check your game results (just to filter out any websites that only claim "provably fair" but don't actually offer you a way to check the results (i.e. [DuelBits](https://duelbits.com/?a=github) or [Rollbit](https://rollbit.com/referral/github) whereas the former offers the ability to change seeds, but doesn't seem to offer a way to check or calculate the results and the latter seems to offer a means of calculating game results with the game script being offerred and an explanation of how it works, but when clicking on past games or trying to identify a particular game's used hashed to look it up, the information thus far seems impossible to find.) However, if result checking is offerred by a third party, where the information can be inputted and a resule be given, then it may be included. The idea is that it's provably fair only if there is a means to verify a particular game and be able to identify that game regardless of when it was played.
+ 
+ Screenshots are probably most convenient and it is only requested that for any initial seed posted screenshots, that you followup with any pasted hashshed/unhashed/client seeds or complicated nonces too if it can be easily copy n pasted. After the seed has been pasted as text once, proceeding screenshots of the same seed can be sent without pasting the text version.
+ 
+ ### Monetary Support
+ 
+ Eventually the data will somehow be comprehensive assembled into a book or app of some sort and funding will be generated from there, but until then, this can only remaind a past time hobby and worked on at intermittent times so any monetary contributions would help call for more committment to the studies' progress.
  
  In addition to crypto address sent donations, monetary contributions using a credit card or bank card is availble through the [purchase of research hours found here](https://checkout.square.site/merchant/9EN1DRFRT1369/checkout/XYAXX4HRDPU7F4DPI4FKYJ77). To view the type of research, the progress, and to view the advantages it hopes to offer, an invite to the private repository is required to help safeguard some of the projects currently under way. Requests can be sent by [submitting a an issue here](https://github.com/nucleare/GameResultsGenerator/issues) using the title "Lacking Data" and submitting your either your preferred contact method or a message requesting the link as a temporary message until the topic is marked as hidden. The issue topic will be immediately hidden upon receipt and can be considered as under review once hidden, but note that the issue topic will remain public until viewed and/or received by the repository owner, so keep that in mind (and consider why both options have been offerred).
 
