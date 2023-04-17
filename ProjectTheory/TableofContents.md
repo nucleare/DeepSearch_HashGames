@@ -1,3 +1,6 @@
+**TLDR** - _This directory is simply for gathering notes and ideas that will be incorporated into the project in one way or another and may not necessarily be complete in verbiage or explanation._
+*****
+
 ### Herein Lies the Analytical Hypothesis and Lucrative Ambitions of a Hopeful But Intelligent (Somewhat) Degen 
 The theoeries that drive innovation, the philosophies that inspire vision, and the aspirations that feed our curiosity and drive is madly climbing down a rabbit whole of highly complicated mathmatics, crytpography, computer science, and technology are all in the name of finding that one sure-fire way of capitalizing on massigve gains from various online casinos and setting ourselves up for a life more enjoyable lived. They say money doesn't solve everything, but it sure does help alot.
 
