@@ -1,4 +1,6 @@
 **TLDR** - _This directory is simply for gathering notes and ideas that will be incorporated into the project in one way or another and may not necessarily be complete in verbiage or explanation._
+
+
 *****
 
 ### Herein Lies the Analytical Hypothesis and Lucrative Ambitions of a Hopeful But Intelligent (Somewhat) Degen 
