@@ -9,10 +9,12 @@ This is a work in progress consisting of scripts that are made to generate the o
  - Simulate hosting your own at-home casino game where you can pre-determine all the results, and provide yourself with an excescise that will prove to be convincing evidence that the casino is in fact NOT changing the placement of the mines when you click on them.
  - And so much more...!
  
- **As of 02/11/23 - Working files include**
+ **As of 05/02/23 - Working files include**
  
   - `GameHash-N1000.py` for providing the output hash of a server seed, client seed pair, automatically attributing each iteration with an apporpriate nonce count and outputting the results in a list in another file. which can be used with...
   - `\Stake\Hash2Limbo-Stake.py` takes the output file from GameHash-N1000.py and returns the results for each game (seed pair and nonce) of Limbo as found on Stake.com or Stake.US and; this output will let you review your revealed server seeds and see how many multipleiers in the hundreds you may have or could have come across. (That sound smore useful doesn't it? lol)
+  - 'lotterypredict.py' will accurately predict the lottery numbers generated from [Los Angeles Time's Lottery Simulator](http://graphics.latimes.com/powerball-simulator/) because it uses your browser's in-built random number generator, which uses a XorShift128+ algorithm. The idea and concept are explained [here](https://blog.securityevaluators.com/hacking-the-javascript-lottery-80cc437e3b7f) and will require you run `Array.from(Array(5), Math.random)` in the browser console to generate 5 randomly generated numbers to input into the script for prediction.
+  - `z3try.py` is a script which attempts to use the Z3 solver to determine the next sequence of numbers between 1 and 100 based on an input of 10 numbers by calculating the mean and attempting to determine the standard deviation of the distribution.
 
 
 
