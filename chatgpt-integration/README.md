@@ -8,4 +8,4 @@ This directory houses the relevant API files for integration of ChatGPT for TBD 
 
 ### Source
 
-openai / [chatgpt-retrieval-plugin]("https://github.com/openai/chatgpt-retrieval-plugin/tree/main")
+openai / [chatgpt-retrieval-plugin](https://github.com/openai/chatgpt-retrieval-plugin/tree/main)
