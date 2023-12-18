@@ -9,7 +9,7 @@ This is a work in progress consisting of scripts that are made to generate the o
  - Simulate hosting your own at-home casino game where you can pre-determine all the results, and provide yourself with an excescise that will prove to be convincing evidence that the casino is in fact NOT changing the placement of the mines when you click on them.
  - And so much more...!
  
- **As of 05/02/23 - Working files include**
+ **As of 12/18/23 - Working files include**
  
   - `GameHash-N1000.py` for providing the output hash of a server seed, client seed pair, automatically attributing each iteration with an apporpriate nonce count and outputting the results in a list in another file. which can be used with...
   - `\Stake\Hash2Limbo-Stake.py` takes the output file from GameHash-N1000.py and returns the results for each game (seed pair and nonce) of Limbo as found on Stake.com or Stake.US and; this output will let you review your revealed server seeds and see how many multipleiers in the hundreds you may have or could have come across. (That sound smore useful doesn't it? lol)
