@@ -9,7 +9,7 @@ This is a work in progress consisting of scripts that are made to generate the o
  - Simulate hosting your own at-home casino game where you can pre-determine all the results, and provide yourself with an excescise that will prove to be convincing evidence that the casino is in fact NOT changing the placement of the mines when you click on them.
  - And so much more...!
  
- **As of 12/18/23 - Working files include**
+ **As of 03/17/24 - Working files include**
  
   - `GameHash-N1000.py` for providing the output hash of a server seed, client seed pair, automatically attributing each iteration with an apporpriate nonce count and outputting the results in a list in another file. which can be used with...
   - `\Stake\Hash2Limbo-Stake.py` takes the output file from GameHash-N1000.py and returns the results for each game (seed pair and nonce) of Limbo as found on Stake.com or Stake.US and; this output will let you review your revealed server seeds and see how many multipleiers in the hundreds you may have or could have come across. (That sound smore useful doesn't it? lol)
@@ -82,26 +82,13 @@ These hashes can be used in conjunction with a scripts for Dice, Limbo, Wheel, B
 
 ## Game Outcome Scripts
 
-### Stake
+### ~~Stake~~
+
+#### UPDATE REGARDING STAKE RESULTS GENERATION
+\[Placeholder\]
 
  - **[Limbo](https://github.com/nucleare/GameResultsGenerator/tree/main/Stake)** - Uses [this script](https://github.com/nucleare/GameResultsGenerator/blob/main/GameHash-N1000.py) on the output file from the Basic Output Hash Generator. Takes on the process of converting the first 4 byte pairs of the Hexidecimal hash and converts them to 4 Unsigned Integers and applies the Limbo game algorithm as found on [Stake.us](stake.us/?c=Github) and [Stake.com](stake.com/?c=guestpass)
- - **Dice** - _Pending_
- - **Wheel** - _No immediate plans for production._
- - **Roulette** - _No immediate plans for production._
- - **Diamonds** - _No immediate plans for production._
 
-## Games with more than 1 incremental number
-
-These games will require, most likely, their own unique script due to the game mechanics of each individual game.
-
- - Hilo (Unlimited to cover required amount of cards)
- - Keno (2 increments for every game due to 10 possible outcomes)
- - Mines (3 increments per game for 24 possible bomb locations)
- - Plinko (2 increments per game to cover possible 16 decisions)
- - Blackjack (Unlimited to cover required amount of cards)
- - Video Poker (7 increments to generate 52 possible cards in a full deck)
- - Diamond Poker (2 increments to cover 10 diamonds: 5 per player/dealer)
- - Slots (The incremental number is only utilised for bonus rounds)
  
  ### BC.Game
  
