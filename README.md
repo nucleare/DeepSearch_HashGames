@@ -84,9 +84,12 @@ These hashes can be used in conjunction with a scripts for Dice, Limbo, Wheel, B
 
 ### ~~Stake~~
 
-#### UPDATE REGARDING STAKE RESULTS GENERATION
-\[Placeholder\]
+#### @\*\*\* UPDATE REGARDING STAKE RESULTS GENERATION \8\*\*@
+With the launch of StakeStats V2, the continued development of the Game Outcome Scripts for Stake would be an inefficient use of anyone's time. Thanks to Seal and his months of committment to the project which has since made huge strides forward in achieving similar objectives and needless to say, many of the things I had hoped the scripts would do can be more quickly done using the [Stake Original's Analyzer](https://stakestats.net/stake/g/oganalyzer) which not only generates the game results for a user's set inputted number of nonces, but it will also automatically aggregate and sort those results according to user defined parameters, allowing anyone using the tool to quickly locate the nonces of interest associated with their sought after game outcomes.
 
+The tool really does shine in many ways I could've only dreamed of and I strongly encourage you to check it out for yourselves. My intentions now will be to prepare a new repository focused more on building from the data that will be gathered from the StakeStats tools and will soon thereafter be retiring this repository. For now, thank you to everyone who showed an interest in my work despite the lack of progress in the past year. Perhaps it was all for the best anyway. Stay safe, play responsibily, and best of luck!
+
+_Left for posterity_
  - **[Limbo](https://github.com/nucleare/GameResultsGenerator/tree/main/Stake)** - Uses [this script](https://github.com/nucleare/GameResultsGenerator/blob/main/GameHash-N1000.py) on the output file from the Basic Output Hash Generator. Takes on the process of converting the first 4 byte pairs of the Hexidecimal hash and converts them to 4 Unsigned Integers and applies the Limbo game algorithm as found on [Stake.us](stake.us/?c=Github) and [Stake.com](stake.com/?c=guestpass)
 
  
